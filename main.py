@@ -57,6 +57,7 @@ top = tkinter.Tk()
 top.title("WordWise")  # 窗体标题
 top.configure(bg="#282C34")  # 窗体颜色
 top.iconphoto(False, tkinter.PhotoImage(file='icon.png'))  # 窗体图标
+top.resizable(0, 0) #Don't allow resizing in the x or y direction
 
 title = tkinter.Label(top, text="文本内容归档辅助系统", font=("微软雅黑", 40), justify="center")
 title.grid(row=0, columnspan=2, sticky=tkinter.NSEW)
